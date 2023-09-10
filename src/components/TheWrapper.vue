@@ -1,5 +1,8 @@
 <template>
     <div class="the-wrapper">
+        <TheToolbar>
+
+        </TheToolbar>
         <slot>
             
         </slot>
@@ -7,7 +10,14 @@
 </template>
 
 <script>
-    
+import TheToolbar from './TheToolbar.vue';
+
+export default {
+    name: 'App',
+    components: {
+        TheToolbar
+    }
+}
 </script>
 
 <style scoped>
