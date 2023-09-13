@@ -1,8 +1,9 @@
 <template>
     <div class="the-wrapper">
-        <TheToolbar>
 
-        </TheToolbar>
+        <TheToolbar></TheToolbar>
+        <TheSearchbar></TheSearchbar>
+        <TheResult></TheResult>
         <slot>
             
         </slot>
@@ -11,11 +12,17 @@
 
 <script>
 import TheToolbar from './TheToolbar.vue';
+import TheSearchbar from './TheSearchbar.vue';
+import TheResult from './TheResult.vue'
+
+
 
 export default {
     name: 'App',
     components: {
-        TheToolbar
+        TheToolbar,
+        TheSearchbar,
+        TheResult
     }
 }
 </script>
