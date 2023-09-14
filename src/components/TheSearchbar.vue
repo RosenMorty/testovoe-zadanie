@@ -14,12 +14,13 @@
 <style scoped lang="scss">
     .searchbar {
         &-wrapper {
-            width: 291px;
-            height: 575px;
-            border-radius: 10px;
-            background: #FDFDFD;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
-            padding: 27px 0 0 20px;
+            margin: 27px 31px 0 20px;
+            width: 240px;
+            // height: 575px;
+            // border-radius: 10px;
+            // background: #FDFDFD;
+            // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+            // padding: 27px 0 0 20px;
         }
         &-user {
             color: #333333;
@@ -30,7 +31,7 @@
         }
         &-input {
             box-sizing: border-box;
-            width: 240px;
+            width: 100%;
             height: 46px;
             border-radius: 10px;
             padding: 16px;   
