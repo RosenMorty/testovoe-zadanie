@@ -8,8 +8,41 @@
             Результаты
         </div>
         <span class="searchbar-result__status">ничего не найдено</span>
+        <div
+
+        v-for="itemCard in viewCard"
+        :key="itemCard.title"
+        >{{ itemCard }}</div>
+        <ItemCard
+        image="https://www.google.com/url?"
+        title="LExa"
+        mail="wewe@adsa"
+        ></ItemCard>
     </div>
 </template>
+
+<script>
+
+import ItemCard from './ItemCard.vue';
+
+    export default {
+        name: "ItemCard",
+        components: {
+                ItemCard
+        },
+
+        setup () {
+            const viewCard = [{
+            image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sima-land.ru%2F667640%2Fkarty-atlasnye-igralnye-36-shtuk%2F&psig=AOvVaw2ueDK8tp_BODMBpYLjM1vO&ust=1694854053693000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKCJ5b-drIEDFQAAAAAdAAAAABAE',
+            title: 'Karina',
+            mail: 'wewe@mail.ru'
+            }]
+            return {
+                viewCard
+            }
+        }
+    }
+</script>
 
 <style scoped lang="scss">
     .searchbar {
