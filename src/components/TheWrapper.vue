@@ -3,11 +3,17 @@
 
         <TheToolbar></TheToolbar>
         <div class="wrapper-container">
-            <TheSearchbar></TheSearchbar>
+            <TheSearchbar>
+
+            </TheSearchbar>
             <div class="wrapper-divider">
 
             </div>
-            <TheResult></TheResult>
+            <TheResult>
+                <ItemPreview>
+                    
+                </ItemPreview>
+            </TheResult>
         </div>
         <slot>
             
@@ -19,7 +25,7 @@
 import TheToolbar from './TheToolbar.vue';
 import TheSearchbar from './TheSearchbar.vue';
 import TheResult from './TheResult.vue'
-
+import ItemPreview from './ItemPreview.vue';
 
 
 export default {
@@ -27,7 +33,8 @@ export default {
     components: {
         TheToolbar,
         TheSearchbar,
-        TheResult
+        TheResult,
+        ItemPreview
     }
 }
 </script>
@@ -49,5 +56,5 @@ export default {
             height: 100%;
             background-color: #E0E0E0;
         }
-        }
+    }
 </style>
