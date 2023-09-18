@@ -68,10 +68,11 @@ export default {
         width: 100%;
         height: 46px;
         border-radius: 10px;
-        padding: 16px;
-        margin-bottom: 22px;
+        margin-bottom: 29px;
         border: 1.5px solid var(--all-colors-gray-gray-200, #E9ECEF);
         background: var(--all-colors-black-white-white, #FFF);
+        color: #76787D;
+        padding: 16px 24px;
     }
 
     &-result {
@@ -93,5 +94,6 @@ export default {
         line-height: normal;
     }
 }
+
 </style>
 

@@ -25,10 +25,12 @@
         line-height: 39px;
 }
     &-user {
-        color: #333333;
-        font-weight: 400;
+        color: #333;
+        font-family: Montserrat;
         font-size: 16px;
-        line-height: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 }
 
     
