@@ -22,6 +22,9 @@
 export default {
     components: {
     },
+    // computed: {
+    //     vueResultComputed 
+    // },
     data() {
         return {
             viewResult: 
@@ -65,6 +68,7 @@ export default {
             border: 1px solid #E0E0E0;
             background:  lightgray 50% / cover no-repeat, #FFF;
             display: flex;
+            border-radius: 10px;
         }
         &-title {
             width: 233px;
