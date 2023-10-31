@@ -18,7 +18,9 @@ export default {
     props: {
         image: String,
         title: String,
-        email: String
+        email: String,
+        phone: String,
+        about: String
     }
 }
 

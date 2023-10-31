@@ -21,7 +21,7 @@ export default {
         image: String,
         title: String,
         email: String,
-        phone: Number,
+        phone: String,
         about: String
     }
 }
