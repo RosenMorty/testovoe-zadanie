@@ -1,33 +1,32 @@
 <template>
     <div class="cardbar-user">
         <img 
-        :src="image"
-        alt="ItemCard"
+        :src="`${selected.image}`"
+        :alt="selected.title"
         class="cardbar-image"
         >
         <div class="cardbar-text">
-            <h1 class="cardbar-title">{{ title }}</h1>
-            <div class="cardbar-email">{{ email }}</div> 
+            <h1 class="cardbar-title">{{ selected.title }}</h1>
+            <div class="cardbar-email">{{ selected.email }}</div> 
         </div> 
     </div>
+    
 </template>
 
-<script>
-
-export default {
-    props: {
-        image: String,
-        title: String,
-        email: String,
-        phone: String,
-        about: String
-    }
-}
-
+<script setup>
+    // eslint-disable-next-line no-undef, no-unused-vars
+    const props = defineProps({
+        selected: {
+            type: Object,
+            required: true,
+            default: () => {} 
+        },
+    });
 </script>
 
-<style lang="scss" scoped>
-    .cardbar {
+<style lang="scss">
+
+.cardbar {
         &-text {
             margin: 15px 0 18px 15px;
         }
