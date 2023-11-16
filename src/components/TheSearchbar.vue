@@ -5,26 +5,30 @@
         <div class="searchbar-user">
             Поиск сотрудников
         </div>
-        <!-- <input class="searchbar-input" placeholder="Введите id или имя"> -->
-        <search-u>
-            
-        </search-u>
+        <input 
+            v-model="searchInput" 
+            class="searchbar-input" 
+            placeholder="Введите id или имя"
+            v-on:keypress.enter="addNewUser"
+        >
         <div class="searchbar-result">
             Результаты
         </div>
-        <item-card v-for="selected of selectedUser.selected"
-        :key="selected.id"
-        :selected="selected"
-        >
-        {{ selectedUser.selected }}
-        </item-card>
+        <span v-if="selectedUser.selected == 0" class="searchbar-result__status">Ничего не найдено</span>
+        <div v-else>
+            <item-card v-for="selected of selectedUser.selected"
+            :key="selected.id"
+            :selected="selected"
+            >
+            {{ selectedUser.selected }}
+            </item-card>
+        </div>
         </div>
     </main>
 </template>
 
 <script setup>
 
-import SearchU from './SearchU.vue';
 import ItemCard from './ItemCard.vue';
 import { useSelectedUserStore } from '../store/SelectedUser'
 

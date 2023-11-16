@@ -37,14 +37,6 @@ export const useSelectedUserStore = defineStore('selectedUser', {
             },
         ],
     }),
-    actions: {
-        async getUsers(search) {
-            const res = await fetch(`${search}`)
-            const data = await res.json()
-            console.log(data);
-            this.users = data.state;
-        }
-    }
 });
 
 

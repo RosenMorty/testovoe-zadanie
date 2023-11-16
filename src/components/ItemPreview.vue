@@ -18,6 +18,7 @@
 
 export default {
     props: {
+        id: Number,
         image: String,
         title: String,
         email: String,
